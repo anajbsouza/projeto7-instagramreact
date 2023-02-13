@@ -5,7 +5,7 @@ export default function Post(props) {
     const [classe, setClasse] = useState("");
     const [curtida, setCurtida] = useState("heart-outline");
     const [classeCurtida, setClasseCurtida] = useState("");
-    const [contador, setContador] = useState(props.curtidasQuantidade);
+    const [contador, setContador] = useState(parseInt(props.curtidasQuantidade));
 
     function salvarPostagem () {
         if(salvar === "bookmark-outline") {
@@ -20,18 +20,18 @@ export default function Post(props) {
     function curtirIcone () {
         if(curtida === "heart-outline") {
             setCurtida("heart");
-            setContador((props.curtidasQuantidade+1));
+            setContador((contador+1));
         } else {
             setCurtida("heart-outline");
             setClasseCurtida("");
-            setContador((props.curtidasQuantidade-1));
+            setContador((contador-1));
         }
     }
     
     function curtirFoto () {
         if(curtida === "heart-outline") {
             setCurtida("heart");
-            setContador((props.curtidasQuantidade+1));
+            setContador((contador+1));
         }
     }
     
