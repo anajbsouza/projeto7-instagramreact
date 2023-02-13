@@ -6,7 +6,7 @@ const arrayDePosts = [
         alt: "gato-telefone",
         curtidasFoto: "./img/respondeai.svg",
         curtidasNome: "respondeai",
-        curtidasQuantidade: "101.523"
+        curtidasQuantidade: "93"
     },
     {   
         nome: "barked",
@@ -14,7 +14,7 @@ const arrayDePosts = [
         conteudo: "./img/dog.svg",
         curtidasFoto: "./img/adorable_animals.svg",
         curtidasNome: "adorable_animals",
-        curtidasQuantidade: "99.159" 
+        curtidasQuantidade: "159" 
     },
     {   
         nome: "barked",
@@ -22,7 +22,7 @@ const arrayDePosts = [
         conteudo: "./img/dog.svg",
         curtidasFoto: "./img/adorable_animals.svg",
         curtidasNome: "adorable_animals",
-        curtidasQuantidade: "99.159"
+        curtidasQuantidade: "99"
     }
 ]
 
