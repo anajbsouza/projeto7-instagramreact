@@ -14,7 +14,7 @@ const arrayDePosts = [
         conteudo: "./img/dog.svg",
         curtidasFoto: "./img/adorable_animals.svg",
         curtidasNome: "adorable_animals",
-        curtidasQuantidade: "159" 
+        curtidasQuantidade: "59" 
     },
     {   
         nome: "barked",

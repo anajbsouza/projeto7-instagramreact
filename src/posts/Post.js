@@ -20,6 +20,7 @@ export default function Post(props) {
     function curtirIcone () {
         if(curtida === "heart-outline") {
             setCurtida("heart");
+            setClasseCurtida("vermelho");
             setContador((contador+1));
         } else {
             setCurtida("heart-outline");
@@ -31,6 +32,7 @@ export default function Post(props) {
     function curtirFoto () {
         if(curtida === "heart-outline") {
             setCurtida("heart");
+            setClasseCurtida("vermelho");
             setContador((contador+1));
         }
     }

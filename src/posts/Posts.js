@@ -6,7 +6,13 @@ export default function Posts() {
     return (
         <div class="posts">
             {arrayDePosts.map((post) => (
-                <Post foto={post.foto} nome={post.nome} conteudo={post.conteudo} alt={post.alt} curtidasFoto={post.curtidasFoto} curtidasNome={post.curtidasNome} curtidasQuantidade={post.curtidasQuantidade} data-test="post-image" />
+                <Post foto={post.foto} 
+                nome={post.nome} 
+                conteudo={post.conteudo} 
+                alt={post.alt} 
+                curtidasFoto={post.curtidasFoto} 
+                curtidasNome={post.curtidasNome} 
+                curtidasQuantidade={post.curtidasQuantidade} />
             ))}
         </div>
     )

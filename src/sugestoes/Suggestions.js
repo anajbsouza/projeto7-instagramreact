@@ -1,12 +1,12 @@
 import React from "react";
-import Sugestao from "./Sugestao";
+import Suggestion from "./Suggestion";
 import arrayDeSugestoes from "./arrayDeSugestoes";
-import Usuario from "../Usuario";
+import User from "../components/Usuario";
 
 export default function Sugestoes() {
     return (
         <div class="sidebar">
-            <Usuario />
+            <User />
             <div class="sugestoes">
                 <div class="titulo">
                 Sugestões para você
@@ -14,7 +14,7 @@ export default function Sugestoes() {
                 </div>
                 <div class="sugestoes">
                     {arrayDeSugestoes.map((sugestao) => (
-                        <Sugestao imagem={sugestao.imagem} nome={sugestao.nome} razao={sugestao.razao} />
+                        <Suggestion imagem={sugestao.imagem} nome={sugestao.nome} razao={sugestao.razao} />
                     ))}
                 </div>
                 <div class="links">

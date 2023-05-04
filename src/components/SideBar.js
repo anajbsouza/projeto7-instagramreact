@@ -1,4 +1,4 @@
-import Sugestoes from './sugestoes/Sugestoes'
+import Sugestoes from '../sugestoes/Suggestions'
 
 export default function SideBar() {
     return (

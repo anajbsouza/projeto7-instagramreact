@@ -1,11 +1,11 @@
-import NavBar from './NavBar'
-import Corpo from './Corpo'
+import NavBar from './components/NavBar'
+import Body from './components/Body'
 
 export default function App() {
     return (
         <div>
             <NavBar />
-            <Corpo />
+            <Body />
         </div>
     )
 }
