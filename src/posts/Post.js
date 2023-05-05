@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Post(props) {
     const [salvar, setSalvar] = useState("bookmark-outline");
@@ -34,6 +35,11 @@ export default function Post(props) {
             setCurtida("heart");
             setClasseCurtida("vermelho");
             setContador((contador+1));
+            <motion.div>
+                animate={{ x: 1, scale: 0.1}}
+                initial={{ scale: 0.2 }}
+                transition={{ ease: "easeOut", duration: 0.3 }}
+            </motion.div>
         }
     }
     
@@ -42,7 +48,7 @@ export default function Post(props) {
         <div class="post" data-test="post">
             <div class="topo">
                 <div class="usuario">
-                    <img src={props.foto} onClick={curtirFoto} alt={props.nome} data-test="post-image" />
+                    <img src={props.foto} onDoubleClick={curtirFoto} alt={props.nome} data-test="post-image" />
                     {props.nome}
                 </div>
                 <div class="acoes">
@@ -51,7 +57,7 @@ export default function Post(props) {
             </div>
 
             <div class="conteudo" onDoubleClick={curtirFoto}>
-                <img src={props.conteudo} alt={props.alt} onClick={curtirFoto} />
+                <img src={props.conteudo} alt={props.alt} onDoubleClick={curtirFoto} />
             </div>
 
             <div class="fundo">

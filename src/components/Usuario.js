@@ -5,19 +5,14 @@ export default function Usuario() {
     const [foto, setFoto] = useState("./img/catanacomics.svg");
     
     function mudarNome() {
-        let novoNome = prompt("Que nome deseja colocar?");
-        if (nome === "") {
-            setNome(nome);
-        } else {
+        const novoNome = prompt("Que nome deseja colocar?");
+        if (novoNome !== "" && novoNome !== undefined && novoNome !== null) {
             setNome(novoNome);
         }
-        
     }
     function mudarFoto() {
-        let novaFoto = prompt("Insira o link da sua nova foto de perfil: ");
-        if (foto === "") {
-            setFoto(foto);
-        } else {
+        const novaFoto = prompt("Insira o link da sua nova foto de perfil: ");
+        if (novaFoto !== "" && novaFoto !== undefined && novaFoto !== null) {
             setFoto(novaFoto);
         }
     }
